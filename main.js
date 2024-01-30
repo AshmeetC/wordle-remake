@@ -22,6 +22,12 @@ input.addEventListener("keyup", function(event) {
 		myFunction();
 	}
 });			
+
+for (var i = 0; i<26; i++){
+			
+	alpha_dict[String.fromCharCode(65 + i)] = "default";
+};
+
 function myFunction() {
 	if (j < 6) {
 
@@ -47,10 +53,6 @@ function myFunction() {
 		var guess = guess_str.split('');
 		result = ['absent','absent','absent','absent','absent'];
 
-		for (var i = 0; i<26; i++){
-			
-			alpha_dict[String.fromCharCode(65 + i)] = "default";
-		};
 
 		
 		if (absent_dict) {
